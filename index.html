@@ -1,361 +1,726 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SamsungDisplay - News Room</title>
-    <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.svg"
-      type="image/x-icon"
-    />
-    <!-- font-awesome 4.7.0 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- css 연결 -->
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-  </head>
 
-  <body>
-    <!-- header 영역 -->
-    <header id="header">
-      <div class="header_wrap">
-        <div class="logo">
-          <a href="#"><img src="assets/img/logo.svg" alt="경로문제" /></a>
-        </div>
-        <ul class="clearfix gnb">
-          <li>
-            <a href="#">제품기술</a>
-            <ul>
-              <li><a href="#">D테크</a></li>
-              <li><a href="#">D라이브러리</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">인사이트</a>
-            <ul>
-              <li><a href="#">테크 트렌드</a></li>
-              <li><a href="#">인사이드 마켓</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">ESG</a>
-            <ul>
-              <li><a href="#">피플&컬쳐</a></li>
-              <li><a href="#">지속가능경영</a></li>
-              <li><a href="#">지속가능경영 보고서</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">기업</a>
-            <ul>
-              <li><a href="#">회사소개</a></li>
-              <li><a href="#">채용정보</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">프레스센터</a>
-            <ul>
-              <li><a href="#">보도자료</a></li>
-              <li><a href="#">알려드립니다</a></li>
-              <li><a href="#">갤러리</a></li>
-              <li><a href="#">뉴스레터</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="clearfix h_sns">
-          <li>
-            <a href="#"><button>뉴스룸 구독</button></a>
-          </li>
-          <li>
-            <a href="#"><img src="assets/img/fb_b.svg" alt="경로 문제" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="assets/img/yt_b.svg" alt="경로 문제" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="assets/img/insta_b.svg" alt="경로 문제" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="assets/img/lang_b.svg" alt="경로 문제" /></a>
-          </li>
-        </ul>
-        <img src="assets/img/search.svg" alt="경로 문제" class="search" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SamsungDisplay - News Room</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" />
+  <!-- font-awesome 4.7.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- header 영역 -->
+  <header id="header">
+    <div class="header_wrap">
+      <div class="logo">
+        <a href="#"><img src="assets/img/logo.svg" alt="경로문제" /></a>
       </div>
-    </header>
+      <ul class="clearfix gnb">
+        <li>
+          <a href="#">제품기술</a>
+          <ul>
+            <li><a href="#">D테크</a></li>
+            <li><a href="#">D라이브러리</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">인사이트</a>
+          <ul>
+            <li><a href="#">테크 트렌드</a></li>
+            <li><a href="#">인사이드 마켓</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">ESG</a>
+          <ul>
+            <li><a href="#">피플&컬쳐</a></li>
+            <li><a href="#">지속가능경영</a></li>
+            <li><a href="#">지속가능경영 보고서</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">기업</a>
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">채용정보</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">프레스센터</a>
+          <ul>
+            <li><a href="#">보도자료</a></li>
+            <li><a href="#">알려드립니다</a></li>
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">뉴스레터</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="clearfix util">
+        <li>
+          <a href="#"><button>뉴스룸 구독</button></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/fb_b.svg" alt="경로 문제" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/yt_b.svg" alt="경로 문제" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/insta_b.svg" alt="경로 문제" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/lang_b.svg" alt="경로 문제" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/search.svg" alt="경로 문제" class="search" /></a>
+        </li>
+      </ul>
+      
+    </div>
+  </header>
 
-    <!--swiper main_banner  (mySwiper1,mySwiper2) -->
-    <section id="main_banner">
-      <div class="inner">
-        <div class="swiper_box">
-          <!-- Swiper 1 -->
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/img/swiper1-1.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/swiper1-2.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/swiper1-3.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <!-- Swiper 2 -->
-          <div class="swiper mySwiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- current, hotclip 최신기사, 유튜브 핫클립 -->
-    <section id="contents">
-      <div class="inner">
-        <div class="current_wrap">
-          <h2>최신 기사</h2>
-          <div class="current">
-            <div class="card c_card">
-              <a href="#">
-                <div class="card_img">
-                  <img src="assets/img/current-1.jpg" alt="경로문제발생" />
-                </div>
-                <div class="card_text">
-                  <p>[창립 10주년 특집] 삼성디스플레이의 역사적 순간 10</p>
-                </div>
-              </a>
-            </div>
-            <div class="card c_card">
-              <a href="#">
-                <div class="card_img">
-                  <img src="assets/img/current-2.jpg" alt="경로문제발생" />
-                </div>
-                <div class="card_text">
-                  <p>
-                    그림, 영상까지 만드는 AI의 진화! AI가 만든 작품은 예술일까?
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="card c_card">
-              <a href="#">
-                <div class="card_img">
-                  <img src="assets/img/current-3.jpg" alt="경로문제발생" />
-                </div>
-                <div class="card_text">
-                  <p>
-                    [REPLAY THE DISPLAY]VOL.13 11.3인치 컬러 STN-LCD 자체 개발
-                    성공
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="card c_card">
-              <a href="#">
-                <div class="card_img">
-                  <img src="assets/img/current-4.jpg" alt="경로문제발생" />
-                </div>
-                <div class="card_text">
-                  <p>삼성디스플레이 뉴스룸 뉴스레터 Vol.118</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hotclip_wrap">
-          <h2>YouTube 핫클립</h2>
-          <div class="hotclip">
-            <div class="card h_card">
-              <a href="#">
-                <div class="card_img">
-                  <img src="assets/img/clips-1.jpg" alt="경로문제" />
-                </div>
-                <div class="card_text">
-                  <p>
-                    [직무탐험 브이로그]SDC 특파원🎥이 떴다! 삼성디스플레이
-                    폴더블 제품개발 엔지니어의...
-                  </p>
-                </div></a
-              >
-            </div>
-          </div>
-          <div class="library">
-            <div class="lib lib_1">
+  <!--swiper main_banner  (mySwiper1,mySwiper2) -->
+  <section id="main_banner">
+    <div class="inner">
+      <div class="swiper_box">
+        <!-- Swiper 1 -->
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/swiper1-1.jpg" alt="" />
               <a href="#"></a>
-              <div class="lib_text">
-                <span>D라이브러리</span>
-                <p>디스플레이 기술을 알기 쉽게 설명한</p>
-                <h3>디스플레이 톺아보기 ></h3>
-              </div>
-              <div class="lib_img">
-                <img src="assets/img/clips-2_icon.png" alt="경로문제" />
-              </div>
             </div>
-            <div class="lib lib_2">
+            <div class="swiper-slide">
+              <img src="assets/img/swiper1-2.jpg" alt="" />
               <a href="#"></a>
-              <div class="lib_text">
-                <span>D라이브러리</span>
-                <p>디스플레이 기술을 알기 쉽게 설명한</p>
-                <h3>디스플레이 용어알기 ></h3>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/swiper1-3.jpg" alt="" />
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper 2 -->
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sw2_text">
+                <h2>[REPLAY THE DISPLAY] VOL.15 LCD 미래연구소 개소, LCD TV 대형화 한계 돌파</h2>
+                <p>“2년 전 이 자리에서 삼성이 세계에서 가장 큰 LCD를 만들겠다고 공언했습니다. 자, 보십시오. 세계에서 가장 큰 40인치 TFT-LCD입니다.” 2001년 10월 일본에서 개최된
+                  FPD 인터내셔널 2001. 모든 플래시가 삼성의 40인치 LCD TV를 향했지만 이날의 진짜 주인공은 2000년 8월, 차세대 디스플레이 개발을 위해 탄생한 삼성의 ‘LCD
+                  미래연구소’였습니다.</p>
               </div>
-              <div class="lib_img">
-                <img src="assets/img/clips-3_icon.png" alt="경로문제" />
+              <a href="#"></a>
+            </div>
+            <div class="swiper-slide">
+              <div class="sw2_text">
+                <h2>[요리조리🥗 기술맛집🍅]여기가 바로 화질 맛집! 이렇게나 쓸모 많은 이 제품은 무엇?</h2>
+                <p>지글지글 탕탕탕 맛있는 소리가 가득한 기술맛집! 요리하고 토크하며 궁금했던 삼성디스플레이 기술이 공개됩니다. 삼성디스플레이 직원들의 맛깔스런 일상과 업무 이야기는 덤! 기술맛집을
+                  찾은
+                  첫번째 주인공은 🧑🍳👩🍳 화질맛집 스마트 OLED 뷰어를 담당하는 임연주 프로와 IT OLED에 대한 모든 것을 알려줄 이병석 프로! 웃음과 지식이 버무려진 신선한 기술토크
+                  속으로
+                  들어가보실게요~🌞</p>
               </div>
+              <a href="#"></a>
+            </div>
+            <div class="swiper-slide">
+              <div class="sw2_text">
+                <h2>[소방의 날 특집] 삼성디스플레이의 생명안전 골키퍼, 방재센터를 소개합니다!</h2>
+                <p>11월 9일은 소방의 날입니다. 화재에 대한 경각심과 이해를 높이고, 화재를 사전에 예방하여 국민의 재산과 생명을 보호하기 위해 제정한 날이죠. 삼성디스플레이에도 소방서와 비슷한
+                  역할을
+                  하는 곳이 있는데요. 바로 방재센터! 화재 대응은 물론 인명구조 현장에 제일 먼저 달려가 안전한 삼성디스플레이를 만들기 위해 노력하는 곳입니다. 오늘은 소방의 날을 맞이해 안전과
+                  생명을
+                  최우선의 가치로 두고 있는 방재센터를 찾아가 보았습니다.</p>
+              </div>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- current, hotclip 최신기사, 유튜브 핫클립 -->
+  <section id="contents">
+    <div class="inner">
+      <div class="current_wrap">
+        <h2>최신 기사</h2>
+        <div class="current">
+          <div class="card c_card">
+            <a href="#">
+              <div class="card_img">
+                <img src="assets/img/current-1.jpg" alt="경로문제발생" />
+              </div>
+              <div class="card_text">
+                <p>[창립 10주년 특집] 삼성디스플레이의 역사적 순간 10</p>
+              </div>
+            </a>
+          </div>
+          <div class="card c_card">
+            <a href="#">
+              <div class="card_img">
+                <img src="assets/img/current-2.jpg" alt="경로문제발생" />
+              </div>
+              <div class="card_text">
+                <p>
+                  그림, 영상까지 만드는 AI의 진화! AI가 만든 작품은 예술일까?
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="card c_card">
+            <a href="#">
+              <div class="card_img">
+                <img src="assets/img/current-3.jpg" alt="경로문제발생" />
+              </div>
+              <div class="card_text">
+                <p>
+                  [REPLAY THE DISPLAY]VOL.13 11.3인치 컬러 STN-LCD 자체 개발
+                  성공
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="card c_card">
+            <a href="#">
+              <div class="card_img">
+                <img src="assets/img/current-4.jpg" alt="경로문제발생" />
+              </div>
+              <div class="card_text">
+                <p>삼성디스플레이 뉴스룸 뉴스레터 Vol.118</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hotclip_wrap">
+        <h2>YouTube 핫클립</h2>
+        <div class="hotclip">
+          <div class="card h_card">
+            <a href="#">
+              <div class="card_img">
+                <img src="assets/img/clips-1.jpg" alt="경로문제" />
+              </div>
+              <div class="card_text">
+                <p>
+                  [직무탐험 브이로그]SDC 특파원🎥이 떴다! 삼성디스플레이
+                  폴더블 제품개발 엔지니어의...
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="lib lib_1">
+            <a href="#"></a>
+            <div class="lib_text">
+              <span>D라이브러리</span>
+              <p>디스플레이 기술을 알기 쉽게 설명한</p>
+              <h3>디스플레이 톺아보기 ></h3>
+            </div>
+            <div class="lib_img">
+              <img src="assets/img/clips-2_icon.png" alt="경로문제" />
+            </div>
+          </div>
+          <div class="lib lib_2">
+            <a href="#"></a>
+            <div class="lib_text">
+              <span>D라이브러리</span>
+              <p>디스플레이 기술을 알기 쉽게 설명한</p>
+              <h3>디스플레이 용어알기 ></h3>
+            </div>
+            <div class="lib_img">
+              <img src="assets/img/clips-3_icon.png" alt="경로문제" />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- popular 인기기사 -->
-    <section id="popular">
-      <div class="inner">
-        <h2>인기기사</h2>
-        <!-- mySwiper3 -->
-        <div class="p_wrap">
-          <div class="swiper mySwiper3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+  <!-- popular 인기기사 -->
+  <section id="popular">
+    <div class="inner">
+      <h2>인기기사</h2>
+      <!-- mySwiper3 -->
+      <div class="p_wrap">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
                 <div class="sw3_img">
                   <img src="assets/img/popular-1.jpg" alt="경로문제" />
                 </div>
                 <div class="sw3_text">
-                  <h2>가나다라</h2>
-                  <p>마바사</p>
+                  <h3>[IMID 2022 기조 연설] 파괴적 혁시능로 변화하는 디스플레이 산업</h3>
+                  <p>최근 부산 벡스코에서 열린 IMID 2022 개막식에서 최주선 삼성디스플레이 대표이사가 기초 연설을 맡아 디스플레이 산업의 미래 전망에 대해 발표했습니다</p>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
                 <div class="sw3_img">
-                  <img src="assets/img/popular-1.jpg" alt="경로문제" />
+                  <img src="assets/img/popular-2.jpg" alt="경로문제" />
                 </div>
                 <div class="sw3_text">
-                  <h2>가나다라</h2>
-                  <p>마바사</p>
+                  <h3>갤럭시 Z 폴드4 혁신을 이끈 삼성 폴더블 OLED '찐' 핵심 기술은 이것!</h3>
+                  <p>지난 8월 10일, 갤럭시 언팩 행사를 통해 갤럭시 Z 폴드4가 공개됐습니다. 이전 시리즈보다 한 차원 더 업그레이된 디스플레이 기술을 탑재하여 소비자들에게 다가갈 텐데요.
+                    갤럭시 Z 폴드4 혁신을 이끈 삼성 폴더블 OLED '찐' 핵심 기술을 모아 소개합니다.</p>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sw3_img"></div>
-                <div class="sw3_text"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sw3_img"></div>
-                <div class="sw3_text"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sw3_img"></div>
-                <div class="sw3_text"></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="sw3_img"></div>
-                <div class="sw3_text"></div>
-              </div>
+              </a>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw3_img">
+                  <img src="assets/img/popular-3.jpg" alt="경로문제" />
+                </div>
+                <div class="sw3_text">
+                  <h3>한국공학한림원 선정 2022 우수 산업 기술 세계 최고 화질의 삼성디스플레이 QD-OLED</h3>
+                  <p>삼성디스플레이 QD-OLED가 한국공학한림원 2022 우수 산업 기술로 선정되었습니다. 공학 분야 전문가들이 올해의 탁월한 우수 기술로 삼성디스플레이 QD-OLED를 선정한
+                    이유가 무엇인지 알아보겠습니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw3_img">
+                  <img src="assets/img/popular-4.jpg" alt="경로문제" />
+                </div>
+                <div class="sw3_text">
+                  <h3>삼성디스플레이 2022년 하반기 3급 신입사원 채용</h3>
+                  <p>삼성디스플레이가 2022년 하반기 3급 신입사원을 선발합니다.
+
+                    최첨단 디스플레이를 개발하고, 디스플레이의 미래를 함께 펼쳐나갈 우수한 인재들의 도전을 기다리고 있습니다.
+
+                    삼성디스플레이에서 여러분의 꿈과 미래를 펼쳐보세요!
+
+                    지원서 작성 : https://www.samsungcareers.com/main.html온라인 리크루팅 채용 TALK 참여 :
+                    https://ko.research.net/r/PRQ88QV ※ 일정 : 9월 7일 17시 (신청 마감 : 9월 6일 18시) ※ Zoom을 이용한 채용설명회 및 TALK</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw3_img">
+                  <img src="assets/img/popular-5.jpg" alt="경로문제" />
+                </div>
+                <div class="sw3_text">
+                  <h3>색상 강도가 주는 화질 차이와 QD-OLED 기술</h3>
+                  <p>
+                    세계적인 대문호이자 색채심리 전문가인 괴테(Johann Wolfgang von Goethe)는 그의 저서 '색채론(Theory of Colours)'에서 노랑이 가장 강한 강도를
+                    지니고 있으며 주황, 빨강, 초록, 파랑 그리고 마지막으로 보라의 순으로 강도를 가진다고 했다. 색상에 강도(Intensity)가 있다는 말이 잘 이해되지 않는 이들도 있겠지만,
+                    색상(Color)마다 각각의 색상 강도(Color intensity)를 가진다는 연구는 17-18세기부터 시작됐다. 이 개념은 색채 상호작용이나 색채 조화론에도 주요 요인으로
+                    작용할 만큼 색상이 가진 중요한 특성 중 하나다.
+
+                    ▲ 흑백과 컬러 이미지의 대비. 컬러 이미지가 더 많은 정보를 전달하며 동시에 더 긍정적 화질로 인식되는 경향이 강하다.
+
+                    색상 자체가 힘을 지닌다는 것은 우리가 무엇인가를 보고 판단할 때 컬러가 큰 영향 끼친다는 것을 의미한다. 흰색, 회색, 검은색처럼 무채색 이미지보다는 색상을 지닌 이미지가 계절
+                    등 더 많은 정보를 전달하며 화질(Image quality)면에서도 더 긍정적인 평가를 받기 마련이다.
+
+                    특히 한 이미지에 더 많은 색이 포함될수록 이미지의 화질이 좋다고 느낄 가능성이 매우 높은데, 이는 우리가 기억을 하는 방식과도 연관이 있다. 우리가 무엇을 더 잘 기억하기 위해
+                    실제 색보다 더 진하게 기억을 하려는 방법을 택하기 때문이다. 이는 우리가 색상을 지닌 이미지를 더 긍정적으로 평가하는 것을 뒷받침한다고 볼 수 있다. 그러므로 이미지가 담고 있는
+                    색상이 가진 강도(힘)는 화질 인식에 중요한 영향을 끼친다고 볼 수 있다. 더 나아가 색상 간의 상호작용이 강한 이미지일수록 높은 대비를 보이기 때문에 보는 사람은 더 좋은 화질을
+                    느끼게 된다.
+
+                    ▲ 동일 휘도(광원에서 방출되는 빛의 강도)의 이미지들이지만 색의 순도가 높을수록 더 밝게 인식한다. 위 그림에서 맨 좌측의 Grey 25%의 경우 "Color Strength"
+                    글자가 잘 보이지 않지만, 나머지 세 가지처럼 색상을 지닐 수록 해당 글자가 더 밝고 뚜렷하게 잘 보이는 것을 느낄 수 있다.
+
+                    각 색상이 가지는 힘은 밝기에도 영향을 미친다. 색채 자극이 동일한 휘도(Luminance)를 갖더라도 색상마다 다른 밝기(Brightness)를 갖는데, [1]실제로 측정한 휘도
+                    보다 밝아 보이는 현상은 특히 색상의 순도가 높을수록 강하게 나타난다. 즉, 각 색상의 순도가 높을수록 강한 힘을 갖는 것이다.
+
+                    [1] 삼성디스플레이의 QD-OLED는 동일 휘도에서 다른 패널 기술과 비교했을 때 한층 더 밝게 느껴지는데 이러한 현상을 체감휘도(XCR,&nbsp;eXperienced
+                    Color Range)라고 일컬음
+
+                    ▲ 인간의 눈으로 볼 수 있는 가시광선의 색 공간(색역). QD-OLED가 표현하는 범위가 더 넓음을 알 수 있다.
+
+                    이미지를 표현하는 전자 장치인 디스플레이 업계에서도 실제 자연의 색을 최대한 실감 나게 구현하기 위해 화질 향상을 위한 하드웨어/소프트웨어 개발에 힘을 쓰고 있다. 그중 색역(색채
+                    구현 범위)을 넓히기 위한 노력은 최근 QD-OLED 기술의 개발로 더욱 진일보했다.
+
+                    ▲ 디스플레이의 R, G, B 스펙트럼 비교. R, G, B 색상별 고유의 파장만 뾰족하게 구분해 표현할수록 색순도가 높아진다.
+
+                    QD-OLED는 색의 삼원색인 R(빨강), G(초록), B(파랑) 각 픽셀의 색순도가 상당히 높아, 주변 색과 섞이는 혼색 현상이 줄어들어 더 진한 빨강, 더 진한 초록, 더 진한
+                    파랑을 표현할 수 있다. 순수하고 정확한 색을 표현할 수 있기 때문에 디스플레이의 색역이 기존 디스플레이 보다 훨씬 넓어졌다. 색역이 넓어진 덕에 그동안 표현하기 힘들었던 자연의
+                    색을 더 많이 보여줄 뿐 아니라 높은 색순도로 인해 더 진한 표현이 가능해져 채도도 높아진다. 앞서 설명했듯이 높은 순도를 가진 색상들은 더 강한 힘을 갖게 되므로 같은 휘도에서도
+                    더 밝게 보이는 효과까지 QD-OLED를 통해 느낄 수 있는 것이다.
+
+                    ▲ QD-OLED와 다른 패널 기술의 화질 차이. QD-OLED는 기존 패널 기술에서 표현하지 못했던 부분을 더 진하게, 밝게, 선명하게 표현한다.
+
+                    진한 정도가 높은 색은 흰색과 검은색의 무채색에서 더 멀리 떨어져 있고 더 강한 인상을 주는 색이다. 우리는 이 인상을 'Color strength'라고 일컫고 이는 QD-OLED
+                    디스플레이가 보여주는 '밝은 색', '진한 색'은 ‘Bright', ‘Vivid' 인상에 부합한다. 밝고 진한 색으로 이루어진 이미지의 인상은 통합적으로 ‘선명한(Clear)’한
+                    인상을 주고 선명도를 높인다.
+
+                    ▲ QD-OLED의 넓어진 색역을 통해 어두운 장면부터 밝은 장면까지 더 선명하고 자연스러운 화질을 느낄 수 있다.
+
+                    먼저 높은 'Color strength'를 가진 색의 경우 동일한 밝기 측정값의 무채색보다 '밝은' 것으로 보인다. 쉽게 설명하자면, 흑백톤 보다 흐린 빨강이 더 밝아 보이고,
+                    흐린 빨강보다 진한 빨강이 더 밝아 보인다는 뜻이다. 따라서 색역의 확장은 실제 물체의 밝은 하이라이트부터 어두운 그림자까지 더 넓은 범위의 색채를 보여줄 수 있기 때문에 더
+                    선명하고, 더 깊고, 더 생생한 화질을 빚어낸다.
+
+                    Color strength의 특징이 효과적으로 활용된 QD-OLED는 밝은 곳은 더 밝게, 어두운 곳은 더 어둡게, 즉 디테일한 표현이 가능하다. 더 넓은 색 영역과 높은 색순도로
+                    더 강한 Color감을 느낄 수 있기 때문이다. 따라서 QD-OLED를 통해 이제까지 보지 못했던 더욱 깊고 생생한 화질을 경험 할 수 있을 것으로 기대된다.
+
+                    ※이 칼럼은 해당 필진의 개인적 소견이며 삼성디스플레이뉴스룸의 입장이나 전략을 담고 있지 않습니다.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw3_img">
+                  <img src="assets/img/popular-6.jpg" alt="경로문제" />
+                </div>
+                <div class="sw3_text">
+                  <h3>그림, 영상까지 만드는 AI의 진화! AI가 만든 작품은 예술일까?</h3>
+                  <p>
+                    지난 8월 말 미술 업계를 떠들썩하게 만든 일이 있었습니다. 미국 '콜로라도 주립 박람회 미술대회’에서 1등을 차지한 그림이 AI에 의해 만들어진 작품이라는 게 알려지면서 큰
+                    이슈가 되었습니다. 이번 사건을 통해 AI가 인간 고유의 활동이라 여겼던 창작의 영역까지 넘볼 수 있다는 사실이 확인된 것입니다. 앞으로 AI의 창작 활동은 점점 더 발전될 것으로
+                    예상됩니다. 과연 그 진화는 어디까지일지, 인공지능의 창작 결과물은 예술품으로 인정받을 수 있을지 함께 알아보겠습니다.
+
+
+
+                    글. MIT Technology Review 편집팀
+
+
+
+                    AI, 모방을 넘어 창작의 영역을 넘보다
+
+
+
+                    앞서 미국 콜로라도에서 진행한 공모전에서 우승을 차지한 그림은 제이슨 M. 앨런(Jason M. Allen)이 출품한 ‘우주 오페라 극장(Théâtre D’opéra
+                    Spatial)’입니다.
+
+
+
+
+
+
+
+                    ▲ 제이슨 앨런(Jason Allen)이 미드저니(Midjourney)를 이용해 만든 그림 '우주 오페라 극장'. 출처 : 미드저니 홈페이지
+
+
+
+                    작품 제출 시 작품의 하단에는 ‘Jason M. Allen via Midjourney’이라고 적혀 있었는데, 여기서 미드저니(Midjourney)가 바로 AI를 활용해 그림을
+                    생성하는 플랫폼입니다. 앨런은 미드저니에 텍스트 명령어(text prompt)를 입력하여 이미지를 생성할 수 있었습니다. 원하는 품질이나 컨셉에 따라 세부 설정을 변경하여 이미지를
+                    만들어 내는 원리입니다. 앨런은 어떤 텍스트를 입력했는지는 밝히지 않았으나 이 그림을 완성하기까지 다양한 텍스트 입력은 물론 포토샵으로 해당 이미지의 디테일을 높이는
+                    하이패스(high pass) 과정을 거쳤고 해상도를 높여주는 기가픽셀 AI(Gigapixel AI)로 이미지를 출력하는 등의 작업을 더한 것으로 알려졌습니다. 이런 방식으로 얻은
+                    작품 중 3개를 골라 대회에 제출했고 이 중 하나가 1등 작품으로 선정되었습니다.
+
+
+
+
+
+
+
+                    ▲ 미드저니 사이트를 통해 제작된 작품들. 출처 : 미드저니 홈페이지
+
+
+
+                    사실 이번 수상 전부터 AI로 만들어진 작품은 예술 분야에서 큰 이슈를 불러일으키곤 했습니다. 지난 5월 런던에서는 세계 최초의 로봇 작가 아이다(Ai-da)의 두 번째 전시회가
+                    열렸습니다. 2019년에 등장한 아이다는 로봇기업 엔지니어드 아츠(Engineered Arts)의 제작 기술과 옥스퍼드대 과학자들이 개발한 알고리즘, 리즈대 AI 엔지니어가
+                    합작해서 만든 AI 로봇입니다. 화가로 활동하며 첫 전시회를 열었고, 이번에는 거울을 보고 직접 본인을 그린 자화상으로 두 번째 전시회를 열었습니다.
+
+
+
+
+
+
+
+
+
+                    ▲ 세계 최초의 휴머노이드 AI 로봇 아티스트 아이다의 테드 강연
+
+
+
+                    또한 2018년 10월 미국 뉴욕에서 열린 한 미술품 경매에서는 처음으로 AI가 그린 초상화가 43만 2,000달러(약 6억원)에 낙찰된 적도 있습니다. 프랑스 예술집단인
+                    오비어스(Obvious)는 14세기에서 20세기 사이에 나온 초상화 1만 5,000장을 심층학습(딥러닝)시켜 개발한 AI로 초상화를 그렸습니다. 이 AI는 초상화에 대한 지식을
+                    바탕으로 새로운 드로잉 기법을 터득해 기존 초상화 화풍을 변주하여 인간의 창작물과 유사한 그림을 만들어 냈습니다. 오비어스는 이를 모방이 아니라 ‘창조’라 강조하고 있습니다.
+
+
+
+
+
+
+
+                    ▲ 인공지능 화가 오비어스가 그린 초상화 에드몽 드 벨라미. 출처 : 오비어스 홈페이지
+
+
+
+                    지속적으로 AI 기술이 발달하면서 최근에는 앱을 통해서 작품을 만드는 일 역시 가능해졌습니다. 구글 플레이 스토어에서 ‘AI ART’를 검색하면 아래 이미지처럼 다양한 앱을 확인할
+                    수 있습니다. 이 같은 앱을 다운받으면 붓질 한 번 하지 않고 나만의 작품을 AI를 통해 만들 수 있습니다. 이미 웹상에서는 달리2(DALL-E 2), 미드저니 같은 AI아트
+                    앱으로 만든 작품을 올리고 서로 평가하는 일이 일상적인 활동으로 자리 잡았습니다.
+
+
+
+
+
+
+
+                    ▲ 구글 플레이 스토어의 AI 아트 앱
+
+
+
+                    AI로 영화까지 제작한다?
+
+
+
+                    이러한 AI의 진화는 비단 미술 작품에만 국한되지 않습니다. 얼마 전 메타에서 메이커비디오(Make-A-Video)를 발표한 것에 이어, 구글도 텍스트 입력을 받아 동영상을 만드는
+                    AI 시스템 이마젠 비디오(Imagen Video)와 페나키(Phenaki)를 공개했습니다.
+
+
+
+                    메타는 '폭우 속을 걷는 젊은 부부'와 '인물을 그리는 테디베어'와 같은 텍스트를 기입하여 아래와 같은 비디오를 만들었습니다. 또 AI 모델을 통해 처리된 거북이가 수영하는 영상과
+                    같이 소스 이미지를 가져와 애니메이션으로 만드는 기능도 소개했습니다.
+
+
+
+
+
+
+
+
+
+                    기존 AI 비디오 생성기는 존재하는 이미지를 가져다 동영상으로 편집하는 수준이었다면, 이제는 입력된 이미지를 토대로 존재하지 않던 이미지를 만들어 영상으로 구현하는 것도 가능해진
+                    것입니다.
+
+
+
+                    구글에서 제작한 이마젠 비디오와 페나키는 시나리오처럼 긴 텍스트 명령어를 입력하면 이를 계속 이어서 생성해 마치 영화와 같은 장편 영상물까지 만들어 줍니다. 이마젠 비디오는 고화질
+                    영상을 만드는 데 특화되어 있고, 페나키는 상세하게 묘사한 명령어를 이해해 장편의 영상을 만들어 주는 것이 강점입니다.
+
+
+
+
+
+
+
+                    ▲ 이마젠 비디오가 텍스트 프롬프트 '설거지하는 곰'으로 생성한 비디오
+
+
+
+
+
+
+
+                    ▲ 페나키가 생성한 2분 분량의 비디오
+
+
+
+                    그러나 메타와 구글 모두 AI시스템을 정식 공개하지 않고 있습니다. 이는 완성도 차원에서도 그렇지만 저작권 문제, 비윤리적인 콘텐츠 생성 등 앞으로 AI가 만드는 작품이 맞닥뜨려야
+                    할 문제들이 산적해 있음을 보여주는 대목입니다.
+
+
+
+                    AI 예술시대, 저작권은 누구에게로?
+
+
+
+                    사실 과거에 예술 분야는 AI로 대체될 수 있는 분야에서 오랫동안 제외되어 왔습니다. 인간만이 가질 수 있는 창의성을 토대로 예술 작품의 오리지널리티가 완성된다는 전제 때문입니다.
+                    그러나 AI가 빠르게 영역을 확장하면서 AI와 예술의 공생에 대해 다양한 담론을 불러일으키고 있습니다.
+
+
+
+                    최근 가장 큰 이슈는 바로 저작권입니다. 이렇게 만들어진 작품의 저작권은 누구에게 귀속되는 것일까요? 미국 저작권청의 규정(copyrightable authorship)과
+                    우리나라의 현행 저작권법은 창작자는 ‘기계’가 아니라 ‘사람(human authorship)’을 기준으로 하고 있습니다. 즉 법에 의하면 AI가 만든 작품은 저작권이 없는
+                    셈입니다. 이 배경에는 AI가 만든 작품을 두고 예술인지 아닌지에 대한 논쟁이 빠질 수 없는데요, 결국 예술 작품에는 작가의 상상력과 창작성이 더해져야만 그 권리를 부여한다는
+                    전제가 깔려 있다고 볼 수 있습니다. 지금까지는 AI를 예술의 주체가 아닌 도구로 활용한다는 주장이 더 우세합니다.
+
+
+
+                    이처럼 AI의 활용 범위가 빠르게 확장되면서 미국은 올 10월 새 AI 권리장전(AI Bill of Rights) 청사진을 공개하기도 했습니다. 공개된 내용에는 ‘안전한 시스템’,
+                    ‘차별 방지’, ‘데이터 사생활 보호’, ‘사전 고지와 설명’, ‘인적대안 및 대비책’에 관한 내용이 정의되어 있습니다. 아직은 법적 구속력이 없고 세부적으로 명시된 조항이 없지만
+                    AI의 부작용을 막기 위한 원칙을 권고했다는 사실에서 큰 의미를 갖고 있습니다.
+
+
+
+                    AI와 예술계가 함께 발전하기 위해선
+
+
+
+                    역사적으로 살펴보면 예술과 기술 발전 사이에서 논쟁은 꾸준히 있어 왔습니다. 사진의 발명을 비롯, 영상매체, 컴퓨터 테크놀로지 등 새로운 기술이 예술 영역으로 유입될 때마다 많은
+                    논쟁이 촉발되었습니다. AI 기술 역시 인간 고유의 특성이라고 할 수 있는 사고력, 직관력, 상상력 등이 AI를 통해 어떻게 구현될 수 있을지, 또 이에 파생될 문제들은 어떻게
+                    제도적으로 마련할 수 있을지에 대한 관심도 모아지고 있는 상황입니다. 하지만 결국 이러한 신기술은 예술과 결합하면서 보다 다양한 장르를 만들어 내는 역할을 해왔습니다. AI 기술의
+                    진화 역시 미술 표현의 영역을 확장할 뿐 아니라 새로운 장르로 자리 잡게 될 것으로 기대됩니다.
+
+                    ※ 이 칼럼은 해당 필진의 개인적 소견이며 삼성디스플레이 뉴스룸의 입장이나 전략을 담고 있지 않습니다.</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- series 연재기사 -->
-    <section id="series">
-      <div class="inner">
-        <!-- mySwiper4 -->
-        <div class="series_title">
-          <h2>연재 기사</h2>
-          <p>삼성디스플레이만의 다양한 이야기를 시리즈로 보실 수 있습니다.</p>
+  <!-- series 연재기사 -->
+  <section id="series">
+    <div class="inner">
+      <!-- mySwiper4 -->
+      <div class="series_title">
+        <h2>연재 기사</h2>
+        <p>삼성디스플레이만의 다양한 이야기를 시리즈로 보실 수 있습니다.</p>
+      </div>
+      <div class="s_wrap">
+        <div class="swiper mySwiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img">
+                  <img src="assets/img/book-1.png" alt="경로문제">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-2.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-3.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-4.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-5.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-6.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-7.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-8.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-9.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-10.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-11.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-12.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-13.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-14.png" alt="경로문제"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="sw4_img"><img src="assets/img/book-15.png" alt="경로문제"></div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="series_wrap"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- subscribe banner -->
-    <section id="subscribe">
-      <div class="inner">
-        <div class="sub_banner">
+  <!-- subscribe banner -->
+  <section id="subscribe">
+    <div class="inner">
+      <div class="sub_banner">
+        <div class="sub_text">
           <img src="assets/img/letter_icon.svg" alt="경로문제" />
           <ul>
             <li>
-              <h3>삼성디스플레이 뉴스룸 구독</h3>
+              <h1>삼성디스플레이 뉴스룸 구독</h1>
             </li>
             <li>
               미래를 여는 새로운창, 디스플레이 산업의 기술과 이슈, 세상과
-              함께하는 다양한 소식을 삼성디스플레이가 전해 드립니다.
+              함께하는 다양한 소식을<br />삼성디스플레이가 전해 드립니다.
             </li>
           </ul>
-          <button class="sub">구독 신청하기</button>
         </div>
+        <a href="#"><button class="sub">구독 신청하기</button></a>
       </div>
-    </section>
-    <footer id="footer">
-      <div class="inner">
-        <div class="ft_nav">
-          <a href="#"
-            ><img src="assets/img/footer_logo.svg" alt="경로문제"
-          /></a>
-          <ul>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">운영정책</a></li>
-            <li><a href="#">뉴스룸 구독</a></li>
-          </ul>
-          <ul class="sns">
-            <li>
-              <a href="#"
-                ><img src="assets/img/footer_home.svg" alt="경로 문제"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/img/footer_fb.svg" alt="경로 문제"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/img/footer_yt.svg" alt="경로 문제"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/img/footer_insta.svg" alt="경로 문제"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/img/footer_lang.svg" alt="경로 문제"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="ft_info">
-          <p>본사 : 12345 ㅇㅇ도 ㅇㅇ시 ㅇㅇ구 ㅇㅇ로1</p>
-          <p>대표번호 : 012 - 3456 - 7890</p>
-          <p>&copy; 2022 YunJungHyo.,LTd All Right Reserved.</p>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-  </body>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="inner">
+      <div class="ft_nav">
+        <a href="#"><img src="assets/img/footer_logo.svg" alt="경로문제" /></a>
+        <ul class="info clearfix">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">운영정책</a></li>
+          <li><a href="#">뉴스룸 구독</a></li>
+        </ul>
+        <ul class="sns clearfix">
+          <li>
+            <a href="#"><img src="assets/img/footer_home.svg" alt="경로 문제" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/footer_fb.svg" alt="경로 문제" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/footer_yt.svg" alt="경로 문제" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/footer_insta.svg" alt="경로 문제" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/footer_lang.svg" alt="경로 문제" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="ft_info">
+        <p>본사 : 12345 ㅇㅇ도 ㅇㅇ시 ㅇㅇ구 ㅇㅇ로1</p>
+        <p>대표번호 : 012 - 3456 - 7890</p>
+        <p>&copy; 2022 YunJungHyo.,LTd All Right Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+</body>
+
 </html>
