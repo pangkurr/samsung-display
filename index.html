@@ -9,6 +9,10 @@
   <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" />
   <!-- font-awesome 4.7.0 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+  
   <!-- css 연결 -->
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/swiper.css" />
@@ -16,6 +20,10 @@
 
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- js 연결 -->
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -23,26 +31,26 @@
   <header id="header">
     <div class="header_wrap">
       <div class="logo">
-        <a href="#"><img src="assets/img/logo.svg" alt="경로문제" /></a>
+        <a href="index.html"><img src="assets/img/logo.svg" alt="경로문제" /></a>
       </div>
       <ul class="clearfix gnb">
         <li>
-          <a href="#">제품기술</a>
-          <ul>
+          <a href="#"><span>제품기술</span></a>
+          <ul class="sub">
             <li><a href="#">D테크</a></li>
             <li><a href="#">D라이브러리</a></li>
           </ul>
         </li>
         <li>
           <a href="#">인사이트</a>
-          <ul>
+          <ul class="sub">
             <li><a href="#">테크 트렌드</a></li>
             <li><a href="#">인사이드 마켓</a></li>
           </ul>
         </li>
         <li>
           <a href="#">ESG</a>
-          <ul>
+          <ul class="sub">
             <li><a href="#">피플&컬쳐</a></li>
             <li><a href="#">지속가능경영</a></li>
             <li><a href="#">지속가능경영 보고서</a></li>
@@ -50,14 +58,14 @@
         </li>
         <li>
           <a href="#">기업</a>
-          <ul>
+          <ul class="sub">
             <li><a href="#">회사소개</a></li>
             <li><a href="#">채용정보</a></li>
           </ul>
         </li>
         <li>
           <a href="#">프레스센터</a>
-          <ul>
+          <ul class="sub">
             <li><a href="#">보도자료</a></li>
             <li><a href="#">알려드립니다</a></li>
             <li><a href="#">갤러리</a></li>
@@ -85,168 +93,169 @@
           <a href="#"><img src="assets/img/search.svg" alt="경로 문제" class="search" /></a>
         </li>
       </ul>
-      
+
     </div>
   </header>
 
-  <!--swiper main_banner  (mySwiper1,mySwiper2) -->
+  <!--swiper main_banner  (mySwiper1) -->
   <section id="main_banner">
-    <div class="inner">
-      <div class="swiper_box">
-        <!-- Swiper 1 -->
-        <div class="swiper mySwiper1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/img/swiper1-1.jpg" alt="" />
-              <a href="#"></a>
+    <div class="swiper_box">
+      <!-- Swiper 1 -->
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide s1">
+            <div class="sw1_img1"></div>
+            <div class="sw1_text">
+              <h2>LED로 심박수를 측정한다고? '광혈류측정 센서(PPG)'</h2>
+              <p>스마트폰 손전등 기능을 켜고 손가락 끝을 올려놓으면 손가락이 빨갛게 변하는 걸 볼 수 있다. 귀나 볼, 손가락 끝같이 신체에서 얇은 부분은 빛이 약간 통과하기 때문이다. “이걸 이용해
+                혈액의 흐름을 관찰할 수는 없을까?”라고 생각한 학자들이 있었다. 빛이 통과하면서 남긴 그림자를 검사하면, 피가 흐르는 흔적도 찾지 않겠냐고.
+
+                시간이 걸렸지만 연구는 성공했고, 이제 누구나 쉽게 쓸 수 있는 그런 기술이 됐다. 스마트 워치를 뒤집으면 보이는 빛나는 센서, 거기에 이 기술이 담겼다. 이름은
+                PPG(Photoplethysmogram). 우리 말로는 ‘광 혈류 측정’이라 부르지만, ‘광 용적 맥파 측정’이나 ‘광 용적 측정’으로 불리기도 한다. 빛을 이용해 피의 흐름을 관찰하는
+                기술이다.</p>
             </div>
-            <div class="swiper-slide">
-              <img src="assets/img/swiper1-2.jpg" alt="" />
-              <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="swiper-slide s2">
+            <div class="sw1_img2"></div>
+            <div class="sw1_text">
+              <h2>갤럭시 Z 폴드4 혁신을 이끈 삼성 폴더블 OLED '찐' 핵심 기술은 이것!</h2>
+              <p>지난 8월 10일, 갤럭시 언팩 행사를 통해 갤럭시 Z 폴드4가 공개됐습니다. 이전 시리즈보다 한 차원 더 업그레이된 디스플레이 기술을 탑재하여 소비자들에게 다가갈 텐데요. 갤럭시 Z 폴드4 혁신을 이끈 삼성 폴더블 OLED '찐' 핵심 기술을 모아 소개합니다.
+                소비전력 감소(Efficient power Consumption)와 친환경 제품(Eco friendly Component)이라는 뜻을 가지고 있습니다.
+              </p>
             </div>
-            <div class="swiper-slide">
-              <img src="assets/img/swiper1-3.jpg" alt="" />
-              <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="swiper-slide s3">
+            <div class="sw1_img3"></div>
+            <div class="sw1_text">
+              <h2>이산화탄소 잡으러 가볼까? 탄소제로의 넥스트 레벨, 탄소포집기술</h2>
+              <p>기후변화의 주범 이산화탄소. 현재 전 세계는 이산화탄소 배출량을 줄이기 위해 고군분투 중입니다. 제일 좋은 방법은 배출 자체를 하지 않는 것이라고 하지만 산업현장에서 단계적인 준비가
+                필요한 만큼 현실적인 문제도 따르고 있습니다. 이런 가운데 이산화탄소를 줄이기 위한 방법으로 주목받고 있는 것이 바로 이산화탄소 포집기술(CCUS)입니다. 공격이 최선의 방어라고, 문제가
+                되고 있는 이산화탄소를 직접 붙잡자는 것입니다. 기후변화를 막기 위한 방법 중 떠오르고 있는 탄소포집기술, 지금부터 알아보겠습니다.</p>
             </div>
+            <a href="#"></a>
           </div>
         </div>
-        <!-- Swiper 2 -->
-        <div class="swiper mySwiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="sw2_text">
-                <h2>[REPLAY THE DISPLAY] VOL.15 LCD 미래연구소 개소, LCD TV 대형화 한계 돌파</h2>
-                <p>“2년 전 이 자리에서 삼성이 세계에서 가장 큰 LCD를 만들겠다고 공언했습니다. 자, 보십시오. 세계에서 가장 큰 40인치 TFT-LCD입니다.” 2001년 10월 일본에서 개최된
-                  FPD 인터내셔널 2001. 모든 플래시가 삼성의 40인치 LCD TV를 향했지만 이날의 진짜 주인공은 2000년 8월, 차세대 디스플레이 개발을 위해 탄생한 삼성의 ‘LCD
-                  미래연구소’였습니다.</p>
-              </div>
-              <a href="#"></a>
-            </div>
-            <div class="swiper-slide">
-              <div class="sw2_text">
-                <h2>[요리조리🥗 기술맛집🍅]여기가 바로 화질 맛집! 이렇게나 쓸모 많은 이 제품은 무엇?</h2>
-                <p>지글지글 탕탕탕 맛있는 소리가 가득한 기술맛집! 요리하고 토크하며 궁금했던 삼성디스플레이 기술이 공개됩니다. 삼성디스플레이 직원들의 맛깔스런 일상과 업무 이야기는 덤! 기술맛집을
-                  찾은
-                  첫번째 주인공은 🧑🍳👩🍳 화질맛집 스마트 OLED 뷰어를 담당하는 임연주 프로와 IT OLED에 대한 모든 것을 알려줄 이병석 프로! 웃음과 지식이 버무려진 신선한 기술토크
-                  속으로
-                  들어가보실게요~🌞</p>
-              </div>
-              <a href="#"></a>
-            </div>
-            <div class="swiper-slide">
-              <div class="sw2_text">
-                <h2>[소방의 날 특집] 삼성디스플레이의 생명안전 골키퍼, 방재센터를 소개합니다!</h2>
-                <p>11월 9일은 소방의 날입니다. 화재에 대한 경각심과 이해를 높이고, 화재를 사전에 예방하여 국민의 재산과 생명을 보호하기 위해 제정한 날이죠. 삼성디스플레이에도 소방서와 비슷한
-                  역할을
-                  하는 곳이 있는데요. 바로 방재센터! 화재 대응은 물론 인명구조 현장에 제일 먼저 달려가 안전한 삼성디스플레이를 만들기 위해 노력하는 곳입니다. 오늘은 소방의 날을 맞이해 안전과
-                  생명을
-                  최우선의 가치로 두고 있는 방재센터를 찾아가 보았습니다.</p>
-              </div>
-              <a href="#"></a>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
 
-  <!-- current, hotclip 최신기사, 유튜브 핫클립 -->
-  <section id="contents">
+  <!-- current -->
+  <section id="current">
     <div class="inner">
+      <h2>최신 기사</h2>
       <div class="current_wrap">
-        <h2>최신 기사</h2>
-        <div class="current">
-          <div class="card c_card">
-            <a href="#">
-              <div class="card_img">
-                <img src="assets/img/current-1.jpg" alt="경로문제발생" />
-              </div>
-              <div class="card_text">
-                <p>[창립 10주년 특집] 삼성디스플레이의 역사적 순간 10</p>
-              </div>
-            </a>
+        <div class="card c_card">
+          <div class="card_img" data-aos="fade-right">
+            <img src="assets/img/current-1.jpg" alt="경로문제발생" />
           </div>
-          <div class="card c_card">
-            <a href="#">
-              <div class="card_img">
-                <img src="assets/img/current-2.jpg" alt="경로문제발생" />
-              </div>
-              <div class="card_text">
-                <p>
-                  그림, 영상까지 만드는 AI의 진화! AI가 만든 작품은 예술일까?
-                </p>
-              </div>
-            </a>
+          <div class="card_text" data-aos="fade-left">
+            <h2>그림, 영상까지 만드는 AI의 진화! AI가 만든 작품은 예술일까?</h2>
+            <p>지난 8월 말 미술 업계를 떠들썩하게 만든 일이 있었습니다. 미국 '콜로라도 주립 박람회 미술대회’에서 1등을 차지한 그림이 AI에 의해 만들어진 작품이라는 게 알려지면서 큰 이슈가
+              되었습니다. 이번 사건을 통해 AI가 인간 고유의 활동이라 여겼던 창작의 영역까지 넘볼 수 있다는 사실이 확인된 것입니다. 앞으로 AI의 창작 활동은 점점 더 발전될 것으로 예상됩니다. 과연
+              그 진화는 어디까지일지, 인공지능의 창작 결과물은 예술품으로 인정받을 수 있을지 함께 알아보겠습니다.</p>
           </div>
-          <div class="card c_card">
-            <a href="#">
-              <div class="card_img">
-                <img src="assets/img/current-3.jpg" alt="경로문제발생" />
-              </div>
-              <div class="card_text">
-                <p>
-                  [REPLAY THE DISPLAY]VOL.13 11.3인치 컬러 STN-LCD 자체 개발
-                  성공
-                </p>
-              </div>
-            </a>
+          <a href="#"></a>
+        </div>
+        <div class="card c_card">
+          <div class="card_img" data-aos="fade-right">
+            <img src="assets/img/current-2.jpg" alt="경로문제발생" />
           </div>
-          <div class="card c_card">
-            <a href="#">
-              <div class="card_img">
-                <img src="assets/img/current-4.jpg" alt="경로문제발생" />
-              </div>
-              <div class="card_text">
-                <p>삼성디스플레이 뉴스룸 뉴스레터 Vol.118</p>
-              </div>
-            </a>
+          <div class="card_text" data-aos="fade-left">
+            <h2>[REPLAY THE DISPLAY] VOL.13 11.3인치 컬러 STN-LCD 자체 개발 성공</h2>
+            <p>
+              삼성은 브라운고나 이후의 차세대 기술로 LCD, VFD, PDP 등을 검토하며 STN-LCD에도 주목했습니다.
+              STN-LCD는 기존의 TN-LCD 보다 액정의 회전 각도가 커 빛 투과율이 높고 색 표현에 더 유리한 기술 입니다.
+
+              1988년, OA용 640 x 400 해상도 STN-LCD 개발을 싲가하면서 2년후 양산 체제를 구축했고 흑백 제품 생산에 집중했습니다.
+              1995년에는 9.4인치 컬러 STN-LCD 양산을 시작했고 당시 대형급이던 11.3인치 SVGA급 컬러 STN-LCD도 세계 두 번째로 자체 개발하며 경쟁력을 높였습니다.
+
+            </p>
           </div>
+          <a href="#"></a>
+        </div>
+        <div class="card c_card">
+          <div class="card_img" data-aos="fade-right">
+            <img src="assets/img/current-3.jpg" alt="경로문제발생" />
+          </div>
+          <div class="card_text" data-aos="fade-left">
+            <h2>"물장군을 구하라!" 삼성디스플레이, 멸종위기종 물장군 보전 사업 펼친다</h2>
+            <p>
+              70년대까지는 자주 눈에 띄었던 ‘물장군’을 아시나요? 아산지역 멸종 위기종 ‘물장군’은 연못이나 논, 물웅덩이 같은 습지에서 서식하는 노린재목 물장군과의 대형 곤충으로, 대한민국에서는
+              멸종위기야생동식물 2급으로 지정되어 보호받고 있는데요. 삼성디스플레이는 도시화로 서식지가 파괴되며 멸종 위기에 처한 물장군 살리기에 나섰습니다. 지역민, 지역 자치 단체와 함께 힘을 모아
+              환경 개선에 나선 현장을 뉴스룸에 담았습니다.
+            </p>
+          </div>
+          <a href="#"></a>
+        </div>
+        <div class="card c_card">
+          <div class="card_img" data-aos="fade-right">
+            <img src="assets/img/current-4.jpg" alt="경로문제발생" />
+          </div>
+          <div class="card_text" data-aos="fade-left">
+            <h2>10월 16일 세계 식량의 날 ‘기후 위기’로 굶주린 인류, 기근을 해결할 해법은?</h2>
+            <p>10월 16일은 UN이 제정한 ‘세계 식량의 날’입니다. 세계식량 안보네트워크(FSIN: Food Security Information Network)는 “세계 식량 위기
+              보고서(Global Report on Food Crises: GRFC 2022)”를 통해 약 1억 9천만 명이 기근을 겪고 있다고 발표했습니다. 이와 같은 결과는 최근 심각해진 기후 위기의
+              직간접적인 영향이라는 분석인데요. 기후 위기가 만들어낸 후폭풍, 식량 위기를 해결하기 위해 우리가 할 수 있는 방법은 없을까요?</p>
+          </div>
+          <a href="#"></a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- 핫클립 -->
+  <section id="hotclip">
+    <div class="inner">
+      <h2>YouTube 핫클립</h2>
       <div class="hotclip_wrap">
-        <h2>YouTube 핫클립</h2>
-        <div class="hotclip">
-          <div class="card h_card">
-            <a href="#">
-              <div class="card_img">
-                <img src="assets/img/clips-1.jpg" alt="경로문제" />
-              </div>
-              <div class="card_text">
-                <p>
-                  [직무탐험 브이로그]SDC 특파원🎥이 떴다! 삼성디스플레이
-                  폴더블 제품개발 엔지니어의...
-                </p>
-              </div>
+        <div class="card h_card">
+          <div class="card_video">
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/vjRkLAs4b1E"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="card_text">
+            <a href="https://www.youtube.com/watch?v=vjRkLAs4b1E">
+              <p>
+                Wanna Break New Ground? (with Samsung Display) <span style="color:red;">
+                  <- 유튜브 보러가기</span>
+              </p>
             </a>
           </div>
+
         </div>
-        <div class="library">
-          <div class="lib lib_1">
-            <a href="#"></a>
-            <div class="lib_text">
-              <span>D라이브러리</span>
-              <p>디스플레이 기술을 알기 쉽게 설명한</p>
-              <h3>디스플레이 톺아보기 ></h3>
-            </div>
-            <div class="lib_img">
-              <img src="assets/img/clips-2_icon.png" alt="경로문제" />
-            </div>
-          </div>
-          <div class="lib lib_2">
-            <a href="#"></a>
-            <div class="lib_text">
-              <span>D라이브러리</span>
-              <p>디스플레이 기술을 알기 쉽게 설명한</p>
-              <h3>디스플레이 용어알기 ></h3>
-            </div>
-            <div class="lib_img">
-              <img src="assets/img/clips-3_icon.png" alt="경로문제" />
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- library -->
+  <section id="library">
+    <div class="lib lib_1">
+      <a href="#"></a>
+      <div class="lib_text">
+        <span>D라이브러리</span>
+        <p>디스플레이 기술을 알기 쉽게 설명한</p>
+        <h3>디스플레이 톺아보기 ></h3>
+      </div>
+      <div class="lib_img">
+        <img src="assets/img/clips-2_icon.png" alt="경로문제" />
+      </div>
+    </div>
+    <div class="lib lib_2">
+      <a href="#"></a>
+      <div class="lib_text">
+        <span>D라이브러리</span>
+        <p>디스플레이 기술을 알기 쉽게 설명한</p>
+        <h3>디스플레이 용어알기 ></h3>
+      </div>
+      <div class="lib_img">
+        <img src="assets/img/clips-3_icon.png" alt="경로문제" />
       </div>
     </div>
   </section>
@@ -717,10 +726,18 @@
       </div>
     </div>
   </footer>
-
+  <div class="topBtn">
+    <i class="fa fas fa-arrow-up"></i>
+  </div>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/swiper.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>
