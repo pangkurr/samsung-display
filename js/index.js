@@ -11,7 +11,7 @@ $(function(){
 
   $(window).scroll(function(){
     bh=$(window).scrollTop();
-    if(bh>0){
+    if(bh>50){
       $(".logo img").attr("src", "assets/img/scrollLogo.svg");
       $(".logo img").css("width",250);
       $('.util li').hide();
@@ -22,6 +22,7 @@ $(function(){
       $(".logo img").css("width","100%");
       $('.util li').show();
       $('.util li:last-child').show();
+      $('.topBtn').hide();
     }
   });
 
