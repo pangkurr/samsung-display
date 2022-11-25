@@ -35,3 +35,13 @@ var swiper = new Swiper(".mySwiper4", {
     prevEl: ".s_wrap .swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".mySwiper5", {
+  slidesPerView: 3.1,
+  spaceBetween: 20,
+  slidesPerGroup: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
